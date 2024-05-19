@@ -21,12 +21,7 @@ To run the server with Docker Compose, you first need to create a `docker-compos
 ```yaml
 services:
   enshrouded:
-    image: mbround18/enshrouded-docker:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
-      platforms:
-        - linux/amd64
+    image: mbround18/enshrouded-docker:latest    
     environment:
       SERVER_NAME: "My Enshrouded Server" # Optional, Name of the server
     #      PASSWORD: "" # Optional, Password for the server
